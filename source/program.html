@@ -42,77 +42,74 @@
 
     </header>
     <main class="page-program">
+      <h1 class="visually-hidden">Кэт энерджи</h1>
       <section class="program">
         <h2 class="program__form-title">Подбор программы</h2>
         <h3 class="program__form-instructions">Заполните анкету, и мы подберем
           программу питания для вашего кота</h3>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="program__form-input">
+          <fieldset>
+
             <label class="program__form-label" for="form-name">Имя:*</label>
             <input class="program__form-input" id="form-name" type="text" name="name" placeholder="Барсик">
-          </p>
-          <p class="program__form-input">
+
             <label class="program__form-label" for="form-weight">Вес (кг):*</label>
             <input class="program__form-input" id="form-weight" type="number" name="weight" placeholder="7">
-          </p>
-          <p class="program__form-input">
+
             <label class="program__form-label" for="form-age">Возраст (лет):</label>
             <input class="program__form-input" id="form-age" type="number" name="age" placeholder="7">
-          </p>
-          <p class="program__radio-input">
+          </fieldset>
+          <fieldset>
             <input type="radio" id="diet" name="program-type" value="diet"
               checked>
             <label for="diet">Похудение</label>
-          </p>
-          <p class="program__radio-input">
+
             <input type="radio" id="mass" name="program-type" value="mass">
             <label for="mass">Наборы массы</label>  
-          </p>        
-          <p class="program__radio-input">
+
             <input type="radio" id="dont-know" name="program-type" value="dont-know">
             <label for="dont-know">Не знаю (нужен ваш совет)</label>
-          </p>
-
+          </fieldset>
+          
           <h2 class="program__contacts-form-title">Контактные данные
           (владельца кота)</h2>
-          <p class="program__form-input">
+          <fieldset>
             <label class="program__form-label" for="form-email">e-mail:*</label>
             <input class="program__form-input" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com">
             <img class="program__form-email-icon" src="img/icon_email.png" width="20" height="14" alt="e-mail">
-          </p>
-          <p class="program__form-input">
+
             <label class="program__form-label" for="form-phone">Телефон:*</label>
             <input class="program__form-input" id="form-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
             <img class="program__form-phone-icon" src="img/icon_phone.png" width="20" height="20" alt="Телефон">
-          </p>
-
-          <h2 class="program__contacts-form-title">Комментарий</h2>
-          <p class="program__contacts-commentary-input">
+          </fieldset>
+            <h2 class="program__contacts-form-title">Комментарий</h2>
+          <fieldset class="program__contacts-commentary-input">
           <label class="visually-hidden" for="form-commentary"></label>
-          <textarea id="form-commentary" name="form-commentary" rows="6" cols="37">Расскажите обо всех повадках кота
+          <textarea id="form-commentary" name="form-commentary" rows="6" cols="37" placeholder="Расскажите обо всех повадках кота">
           </textarea>
-          </p>
+          </fieldset>
 
           <h2 class="program__contacts-form-title">Дополнительно</h2>
-          <p class="program__checkbox-input">
+          <fieldset class="program__checkbox-input">
           <input class="program__form-input" type="checkbox" id="sweetener" name="sweetener"
           checked>
           <label class="program__form-label" for="sweetener">Сахарозаменитель</label>
-          </p>
-          <p class="program__checkbox-input">
+          
+
           <input class="program__form-input" type="checkbox" id="water" name="water">
           <label class="program__form-label" for="water">Питьевая вода</label>
-          </p>
-           <p class="program__checkbox-input">
+
+
           <input class="program__form-input"  type="checkbox" id="milk" name="milk">
           <label class="program__form-label" for="milk">Молоко</label>
-          </p>
-          <p class="program__checkbox-input">
+
+
           <input class="program__form-input"  type="checkbox" id="vitamins" name="vitamins">
           <label class="program__form-label" for="vitamins">Витамины</label>
-          </p>
+
           <button class="button" type="submit">Отправить заявку</button>
           <p>* — Обязательные поля</p>
+          </fieldset>
         </form>
       </section>
     </main>
@@ -151,8 +148,8 @@
             </li>
           </ul>
           <div class="page-footer__html-logo-wrapper">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <h3>HTML Academy</h3>
+            <a class="page-footer__html-logo" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
             </a>
             <a href="https://htmlacademy.ru/intensive/adaptive">
               <img class="page-footer__html-logo" src="img/logo_html.png" width="27" height="34" alt="HTML Academy">
