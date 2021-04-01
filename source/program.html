@@ -9,14 +9,15 @@
       <a href="index.html" class="page-header__small-logo">
         <img src="img/header-small-logo.png" width="191" height="38" alt="Лого">
       </a>
+      <button class="page-header__nav-toggle" type="button">
+        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+          <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+        </svg><span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-          </svg><span class="visually-hidden">Открыть меню</span>
-        </button>
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -48,18 +49,19 @@
         <h3 class="program__form-instructions">Заполните анкету, и мы подберем
           программу питания для вашего кота</h3>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-
+          <p class="program__info-form">
             <label class="program__form-label" for="form-name">Имя:*</label>
             <input class="program__form-input" id="form-name" type="text" name="name" placeholder="Барсик">
-
+          </p>
+          <p class="program__info-form">
             <label class="program__form-label" for="form-weight">Вес (кг):*</label>
             <input class="program__form-input" id="form-weight" type="number" name="weight" placeholder="7">
-
+          </p>
+          <p class="program__info-form">
             <label class="program__form-label" for="form-age">Возраст (лет):</label>
             <input class="program__form-input" id="form-age" type="number" name="age" placeholder="7">
-          </fieldset>
-          <fieldset>
+          </p>
+          <fieldset class="program__choice-form">
             <input type="radio" id="diet" name="program-type" value="diet"
               checked>
             <label for="diet">Похудение</label>
@@ -73,43 +75,43 @@
           
           <h2 class="program__contacts-form-title">Контактные данные
           (владельца кота)</h2>
-          <fieldset>
+          <p class="program__contacts-form">
             <label class="program__form-label" for="form-email">e-mail:*</label>
             <input class="program__form-input" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com">
             <img class="program__form-email-icon" src="img/icon_email.png" width="20" height="14" alt="e-mail">
-
+          </p>
+          <p class="program__contacts-form">
             <label class="program__form-label" for="form-phone">Телефон:*</label>
             <input class="program__form-input" id="form-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
             <img class="program__form-phone-icon" src="img/icon_phone.png" width="20" height="20" alt="Телефон">
-          </fieldset>
+          </p>
             <h2 class="program__contacts-form-title">Комментарий</h2>
-          <fieldset class="program__contacts-commentary-input">
-          <label class="visually-hidden" for="form-commentary"></label>
-          <textarea id="form-commentary" name="form-commentary" rows="6" cols="37" placeholder="Расскажите обо всех повадках кота">
-          </textarea>
-          </fieldset>
+          <p class="program__contacts-commentary-input">
+            <label class="visually-hidden" for="form-commentary"></label>
+            <textarea id="form-commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
 
           <h2 class="program__contacts-form-title">Дополнительно</h2>
-          <fieldset class="program__checkbox-input">
-          <input class="program__form-input" type="checkbox" id="sweetener" name="sweetener"
-          checked>
-          <label class="program__form-label" for="sweetener">Сахарозаменитель</label>
-          
+          <p class="program__checkbox-input">
+            <input class="program__form-input" type="checkbox" id="sweetener" name="sweetener"
+            checked>
+            <label class="program__form-label" for="sweetener">Сахарозаменитель</label>
+          </p>  
+          <p class="program__checkbox-input">
+            <input class="program__form-input" type="checkbox" id="water" name="water">
+            <label class="program__form-label" for="water">Питьевая вода</label>
+          </p>
+          <p class="program__checkbox-input">
+            <input class="program__form-input"  type="checkbox" id="milk" name="milk">
+            <label class="program__form-label" for="milk">Молоко</label>
+          </p>
+          <p class="program__checkbox-input">
+            <input class="program__form-input"  type="checkbox" id="vitamins" name="vitamins">
+            <label class="program__form-label" for="vitamins">Витамины</label>
 
-          <input class="program__form-input" type="checkbox" id="water" name="water">
-          <label class="program__form-label" for="water">Питьевая вода</label>
-
-
-          <input class="program__form-input"  type="checkbox" id="milk" name="milk">
-          <label class="program__form-label" for="milk">Молоко</label>
-
-
-          <input class="program__form-input"  type="checkbox" id="vitamins" name="vitamins">
-          <label class="program__form-label" for="vitamins">Витамины</label>
-
-          <button class="button" type="submit">Отправить заявку</button>
+            <button class="button" type="submit">Отправить заявку</button>
+          </p>
           <p>* — Обязательные поля</p>
-          </fieldset>
         </form>
       </section>
     </main>
