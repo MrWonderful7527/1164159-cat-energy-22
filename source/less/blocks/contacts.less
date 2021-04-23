@@ -1,0 +1,54 @@
+.contacts {
+  position: relative;
+
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: @color-secondary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: @color-secondary;
+  }
+}
+
+
+.contacts__invitation {
+  width: 140px;
+  margin: 0;
+  padding-right: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-secondary-font;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  width: 140px;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: @font-secondary;
+}

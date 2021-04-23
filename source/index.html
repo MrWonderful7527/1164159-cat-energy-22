@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="index.html" class="page-header__small-logo">
+      <a href="index.html" class="page-header__logo">
         <img src="img/header-small-logo.png" width="191" height="38" alt="Лого">
       </a>
       <button class="page-header__nav-toggle" type="button">
@@ -44,6 +44,7 @@
       <section class="promo">
         <div class="promo__wrapper">
           <header class="promo__header">
+            <div class="promo__name-wrapper">
             <h2 class="visually-hidden">
               Промо
             </h2>
@@ -53,11 +54,12 @@
             </p>
             <p class="promo__slogan">
               Занялся собой? Займись котом!</p>
-            <img src="img/index-can.png" width="280" height="270" alt="Упаковка">
+            </div>
+            <img class="promo__image" src="img/index-can.png" width="280" height="270" alt="Упаковка">
             <button class="promo__program" type="button">Подобрать программу</button>
           </header>
           <dl class="catalog">
-            <div class="catalog__programs-wrapper">
+            <div class="catalog__program-wrapper">
               <dt class="catalog__program-name">
                 <img class="catalog__program-image" src="img/cat_back_slim.png" width="50" height="53" alt="Худой кот">
                 Похудение</dt>
@@ -79,7 +81,7 @@
                 </a>
               </dd>
             </div>
-            <div class="catalog__programs-wrapper">
+            <div class="catalog__program-wrapper">
               <dt class="catalog__program-name">
                 <img class="catalog__program-image" src="img/cat_back_buff.png" width="67" height="50" alt="Кот на массе">
                 Набор массы</dt>
@@ -88,7 +90,7 @@
                 и даже собак? Серия Cat Energy Pro поможет
                 вашему коту нарастить
                 необходимые мышцы!
-                <a class="catalog__link" href="program.html">Каталог pro
+                <a class="catalog__program-link" href="program.html">Каталог pro
                   <svg class="catalog__link-arrow catalog__link-arrow--idle" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
                     <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
@@ -165,14 +167,16 @@
               <dt class="example__item-number">
                 60 дней
               </dt>
-              <dd class="example__item-number">Затрачено
+              <dd class="example__item-text">Затрачено
                 времени
               </dd>
             </div>
           </dl>
-          <h3 class="example__price">
-            Затраты на питание: 15 000 РУБ.
-          </h3>
+          <div class="example__price-wrapper">
+            <h3 class="example__price">
+              Затраты на питание: 15 000 РУБ.
+            </h3>
+          </div>>
           <div class="example__slider">
             <img class="example__slider-image" src="img/before1.png" width="311" height="232" alt="Толстый кот">
             <img class="example__slider-image" src="img/after1.png" width="251" height="240" alt="Худой кот">
@@ -202,7 +206,7 @@
         </p>
         <img class="contacts__map" src="img/location.png" width="320" height="362" alt="Расположение на карте">
       </section>
-        <a href="index.html">
+        <a class="page-footer__logo-link" href="index.html">
           <img class="page-footer__logo" src="img/logo_2.png" width="128" height="24" alt="Кэт энерджи">
         </a>
         <div class="page-footer__socials-wrapper">
