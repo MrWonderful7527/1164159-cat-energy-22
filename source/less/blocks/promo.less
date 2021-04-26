@@ -1,0 +1,52 @@
+.promo {
+  margin-bottom: 22px;
+}
+
+.promo__program {
+  background: #68B738; 
+  line-height: 18px;
+}
+
+.promo__name-wrapper {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 168px;
+
+  text-align: center;
+  color: @color-interactive-text;
+
+  background-color: #68B738;
+  background-position: center;
+  background-size: cover;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/index-background.png);
+    width: 320px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    z-index: 0;
+    }
+}
+
+.promo__name {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  display: block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
