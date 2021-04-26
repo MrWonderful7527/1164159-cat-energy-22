@@ -8,6 +8,7 @@
 }
 
 .promo__name-wrapper {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 168px;
 
@@ -15,9 +16,21 @@
   color: @color-interactive-text;
 
   background-color: #68B738;
-  background-image: url("../img/index-background.png");
   background-position: center;
   background-size: cover;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/index-background.png);
+    width: 320px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    z-index: 0;
+    }
 }
 
 .promo__name {
