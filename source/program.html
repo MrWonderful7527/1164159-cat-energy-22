@@ -19,7 +19,6 @@
         </svg><span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
-
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -37,12 +36,9 @@
                 Подбор программы
               </a>
             </li>
-
           </ul>
-
         </div>
       </nav>
-
     </header>
     <main class="page-program">
       <h1 class="visually-hidden">Кэт энерджи</h1>
@@ -64,17 +60,16 @@
             <input class="program__form-input" id="form-age" type="number" name="age" placeholder="7">
           </p>
           <fieldset class="program__choice-form">
-            <input type="radio" id="diet" name="program-type" value="diet"
+            <input class="program__form-input--radio" type="radio" id="diet" name="program-type" value="diet"
               checked>
-            <label for="diet">Похудение</label>
+            <label class="program__form-label" for="diet">Похудение</label>
 
-            <input type="radio" id="mass" name="program-type" value="mass">
-            <label for="mass">Наборы массы</label>  
+            <input class="program__form-input--radio" type="radio" id="mass" name="program-type" value="mass">
+            <label class="program__form-label" for="mass">Наборы массы</label>  
 
-            <input type="radio" id="dont-know" name="program-type" value="dont-know">
-            <label for="dont-know">Не знаю (нужен ваш совет)</label>
+            <input class="program__form-input--radio" type="radio" id="dont-know" name="program-type" value="dont-know">
+            <label class="program__form-label" for="dont-know">Не знаю (нужен ваш совет)</label>
           </fieldset>
-          
           <h2 class="program__contacts-form-title">Контактные данные
           (владельца кота)</h2>
           <p class="program__contacts-form">
@@ -90,30 +85,30 @@
             <h2 class="program__contacts-form-title">Комментарий</h2>
           <p class="program__contacts-commentary-input">
             <label class="visually-hidden" for="form-commentary"></label>
-            <textarea id="form-commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="program__textarea" id="form-commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
-
+          <section class="additionally">
           <h2 class="program__contacts-form-title">Дополнительно</h2>
           <p class="program__checkbox-input">
-            <input class="program__form-input" type="checkbox" id="sweetener" name="sweetener"
+            <input class="program__form-input--checkbox" type="checkbox" id="sweetener" name="sweetener"
             checked>
             <label class="program__form-label" for="sweetener">Сахарозаменитель</label>
           </p>  
           <p class="program__checkbox-input">
-            <input class="program__form-input" type="checkbox" id="water" name="water">
+            <input class="program__form-input--checkbox" type="checkbox" id="water" name="water">
             <label class="program__form-label" for="water">Питьевая вода</label>
           </p>
           <p class="program__checkbox-input">
-            <input class="program__form-input"  type="checkbox" id="milk" name="milk">
+            <input class="program__form-input--checkbox"  type="checkbox" id="milk" name="milk">
             <label class="program__form-label" for="milk">Молоко</label>
           </p>
           <p class="program__checkbox-input">
-            <input class="program__form-input"  type="checkbox" id="vitamins" name="vitamins">
+            <input class="program__form-input--checkbox"  type="checkbox" id="vitamins" name="vitamins">
             <label class="program__form-label" for="vitamins">Витамины</label>
-
-            <button class="button" type="submit">Отправить заявку</button>
+            <button class="button program__form-button" type="submit">Отправить заявку</button>
           </p>
-          <p>* — Обязательные поля</p>
+          <p class="program__note">* — Обязательные поля</p>
+        </section>
         </form>
       </section>
     </main>
