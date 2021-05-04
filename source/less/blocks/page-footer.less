@@ -77,3 +77,32 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+.contacts__map {
+  height: 396px;
+
+  background-image: url("../img/bg-map-t@1x.png");
+
+  &::before {
+    top: 147px;
+    left: 42%;
+
+    width: 124px;
+    height: 106px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__map {
+    background-image: url("../img/bg-map-d@1x.png");
+
+    &::before {
+      top: 147px;
+      left: 69%;
+
+      width: 113px;
+    }
+  }
+}

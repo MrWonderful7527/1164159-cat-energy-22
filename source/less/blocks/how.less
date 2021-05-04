@@ -12,6 +12,10 @@
   color: @color-secondary-font;
 }
 
+.how__list {
+  list-style: none;
+}
+
 .how__item {
   position: relative;
 
@@ -27,4 +31,107 @@
   font-size: 14px;
   line-height: 18px;
   font-family: @font-secondary;
+}
+
+@media (min-width: @tablet-width) {
+  .how {
+    padding-top: 45px;
+    padding-bottom: 59px;
+  }
+
+  .how__title {
+    margin-bottom: 72px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .how__item {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+    padding-top: 96px;
+    padding-bottom: 27px;
+
+    &:nth-child(2n) {
+      margin-bottom: 90px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+
+      font-size: 282px;
+      line-height: 282px;
+      color: @color-secondary;
+    }
+
+    &:nth-child(1)::before {
+      content: "1";
+    }
+
+    &:nth-child(2)::before {
+      content: "2";
+      left: 111px;
+    }
+
+    &:nth-child(3)::before {
+      content: "3";
+      left: 113px;
+    }
+
+    &:nth-child(4)::before {
+      content: "4";
+      left: 113px;
+    }
+  }
+
+  .how__description {
+    width: 245px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: -112px;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: -97px;
+      left: 15px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how {
+    padding: 0;
+    padding-top: 73px;
+  }
+
+  .how__title {
+    margin-bottom: 72px;
+  }
+
+  .how__item {
+    width: 246px;
+    padding-bottom: 0;
+  }
 }

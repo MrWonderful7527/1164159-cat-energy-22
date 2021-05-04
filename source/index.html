@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -9,7 +10,11 @@
   <body class="page__body">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="img/header-small-logo.png" width="191" height="38" alt="Лого">
+        <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-bigger.png">
+        <source media="(min-width: 768px)" srcset="img/logo-big.png">
+        <img class="page-header__logo-img" src="img/header-small-logo.png" width="191" height="38" alt="Лого">
+        </picture>
       </a>
       <button class="page-header__nav-toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,17 +27,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="program.html">
+              <a class="main-nav__link" href="program.html">
                 Подбор программы
               </a>
             </li>
@@ -56,7 +61,15 @@
             <p class="promo__slogan">
               Занялся собой? Займись котом!</p>
             </div>
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-d@1x.webp 1x, img/index-can-d@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-t@1x.webp 1x, img/index-can-t@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-m@1x.webp 1x, img/index-can-m@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/index-can-d@1x.png 1x, img/index-can-d@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-t@1x.jpg 1x, img/index-can-t@2x.jpg 2x">
             <img class="promo__image" src="img/index-can.png" width="280" height="270" alt="Упаковка">
+            </picture>
             <button class="promo__program" type="button"><a href="program.html">Подобрать программу</a></button>
           </header>
           <dl class="catalog">
@@ -179,8 +192,24 @@
             </h3>
           </div>
           <div class="example__slider">
-            <img class="example__slider-image" src="img/before1.png" width="311" height="232" alt="Толстый кот">
-            <img class="example__slider-image" src="img/after1.png" width="251" height="240" alt="Худой кот">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-d@1x.webp 1x, img/before-d@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-t@1x.webp 1x, img/before-t@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-m@1x.webp 1x, img/before-m@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/before-d@1x.png 1x, img/before-d@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-t@1x.png 1x, img/before-t@2x.png 2x">
+            <img class="example__slider-image" src="img/before-m@1x.png" width="311" height="232" alt="Толстый кот">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-d@1x.webp 1x, img/after-d@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-t@1x.webp 1x, img/after-t@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-m@1x.webp 1x, img/after-m@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/after-d@1x.png 1x, img/after-d@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-t@1x.png 1x, img/after-t@2x.png 2x">
+            <img class="example__slider-image" src="img/after-m@1x.png" width="251" height="240" alt="Худой кот">
+            </picture>
             <p>Было</p>
               <div class="scale">
                 <div class="bar" style="
@@ -196,6 +225,7 @@
     </main>
       <footer class="page-footer">
         <section class="contacts">
+        <div class="contacts__wrap">
         <h3 class="contacts__invitation">
           Приглашаем
           к сотрудничеству
@@ -205,7 +235,18 @@
           Конюшенная, д. 19/8
           Санкт-Петербург
         </p>
-        <img class="contacts__map" src="img/location.png" width="320" height="362" alt="Расположение на карте">
+        </div>
+        <section class="contacts__map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/location-d@1x.webp 1x, img/location-d@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/location-t@1x.webp 1x, img/location-t@2x.webp 2x">
+            <source type="image/webp" srcset="img/location@1x.webp 1x, img/location@2x.webp 2x">
+            
+            <source media="(min-width: 1300px)" srcset="img/location-d@1x.png 1x, img/location-d@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/location-t@1x.png 1x, img/location-t@2x.png 2x">
+            <img class="contacts__map" src="img/location.png" width="320" height="362" alt="Расположение на карте">
+          </picture>
+        </section>
       </section>
         <a class="page-footer__logo-link" href="index.html">
           <img class="page-footer__logo" src="img/logo_2.png" width="128" height="24" alt="Кэт энерджи">
