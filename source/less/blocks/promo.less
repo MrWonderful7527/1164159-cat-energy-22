@@ -5,6 +5,8 @@
 .promo__program {
   background: #68B738; 
   line-height: 18px;
+  max-width: 244px;
+  position: relative;
 }
 
 .promo__name-wrapper {
@@ -57,6 +59,16 @@
     margin-bottom: 29px;
     padding-top: 29px;
     padding-left: 117px;
+  }
+
+  .promo__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__header picture {
+    order: 1;
+    margin-top: -29px;
   }
 
   .promo__name-wrapper {
@@ -113,6 +125,13 @@
     margin: 0;
     padding: 0;
     padding-top: 106px;
+  }
+
+  .promo__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 234px;
+    margin-bottom: 267px;
   }
 
   .promo__name-wrapper {

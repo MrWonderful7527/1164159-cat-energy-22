@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+
   color: @color-secondary-font;
 
   background-color: @color-main;
@@ -101,7 +103,6 @@
 
   .main-nav {
     display: block;
-    width: 516px;
     padding-top: 2px;
   }
 
@@ -109,7 +110,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 516px;
   }
 
   .main-nav__item {
@@ -146,6 +146,8 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    display: flex;
+
     position: relative;
 
     padding: 0;
