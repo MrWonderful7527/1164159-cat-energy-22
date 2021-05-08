@@ -212,10 +212,24 @@
   align-items: center;
 }
 
+.example__paragraph-wrapper {
+  justify-content: space-evenly;
+}
+
+.example__results-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: @tablet-width) {
   .catalog__program-name {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .example__inner-wrapper {
+    display: flex;
     justify-content: space-between;
   }
 
@@ -232,6 +246,10 @@
 @media (min-width: @desktop-width){
   .catalog {
     display: flex;
+  }
+
+  .catalog__program-name {
+    flex-direction: row;
   }
 
   .example__wrapper {
