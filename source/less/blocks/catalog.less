@@ -213,6 +213,7 @@
 }
 
 .example__paragraph-wrapper {
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -246,6 +247,10 @@
 @media (min-width: @desktop-width){
   .catalog {
     display: flex;
+  }
+
+  .example__inner-wrapper {
+    display: block;
   }
 
   .catalog__program-name {
